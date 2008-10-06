@@ -1,5 +1,5 @@
 <% content_for :sidebar do -%>
-<h2>My account</h2>
+<h2><%= I18n.t(:'txt.my_account') %></h2>
 
 <ul>
 	<li><%= link_to "Update my profile", edit_profile_url(current_user) %></li>
