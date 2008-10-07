@@ -2,18 +2,18 @@
 <h2><%= I18n.t(:'txt.my_account') %></h2>
 
 <ul>
-	<li><%= link_to "Update my profile", edit_profile_url(current_user) %></li>
-	<li><%= link_to "Update my avatar", edit_avatar_user_url(current_user) %></li>
+	<li><%= link_to I18n.t(:'txt.update_my_profile'), edit_profile_url(current_user) %></li>
+	<li><%= link_to I18n.t(:'txt.update_my_avatar'), edit_avatar_user_url(current_user) %></li>
 </ul>
 
 <ul>
-	<li><%= link_to "Change my email address", edit_email_user_url(@user) %></li>
-	<li><%= link_to "Change my password", edit_password_user_url(@user) %></li>
+	<li><%= link_to I18n.t(:'txt.change_my_email_address'), edit_email_user_url(@user) %></li>
+	<li><%= link_to I18n.t(:'txt.change_my_password'), edit_password_user_url(@user) %></li>
 </ul>
 
 <% unless admin? -%>
 <ul>
-	<li><%= link_to "Delete my account", user_url(current_user), :method => :delete, :confirm => "Are you sure you want to schedule your account for deletion? All data linked to your account on #{s(:site_name)} will be removed from our systems.\n\nTHIS ACTION CANNOT BE UNDONE!\n\nThanks for using #{s(:site_name)}. We hope to see you again soon!"%></li>
+	<li><%= link_to I18n.t(:'txt.delete_my_account'), user_url(current_user), :method => :delete, :confirm => I18n.t(:'txt.confirm_delete_account', :site_name => s(:site_name))%></li>
 </ul>
 <% end -%>
 <% end -%>

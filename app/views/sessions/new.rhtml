@@ -1,29 +1,29 @@
 <% content_for :header do -%>
-<%= s(:site_name) %> Login
+	<%= I18n.t(:'txt.login_on_site', :site_name => s(:site_name)) %>
 <% end -%>
 
 <% content_for :sidebar do -%>
 <ul>
-	<li><%= link_to("Sign up for a new account", signup_url)%></li>
+	<li><%= link_to(I18n.t(:'txt.sign_up_for_a_new_account'), signup_url)%></li>
 </ul>
 <% end -%>
 
 <% form_tag session_path do -%>
-<p><label for="login">Login</label><br/>
+<p><label for="login"><%= I18n.t(:'txt.user_name') %></label><br/>
 <%= text_field_tag 'login' %></p>
 
-<p><label for="password">Password</label><br/>
+<p><label for="password"><%= I18n.t(:'txt.password') %></label><br/>
 <%= password_field_tag 'password' %></p>
 
-<p><label for="remember_me">Remember me:</label>
+<p><label for="remember_me"><%= I18n.t(:'txt.remember_me') %>:</label>
 <%= check_box_tag 'remember_me' %></p>
 
 <ul>
-	<li><%= link_to "Sign up for an account now", signup_url %></li>
-	<li><%= link_to "Having trouble logging in?", user_troubleshooting_url %></li>
+	<li><%= link_to I18n.t(:'txt.sign_up_for_a_new_account'), signup_url %></li>
+	<li><%= link_to I18n.t(:'txt.having_trouble_logging_in'), user_troubleshooting_url %></li>
 </ul>
 
 <div id="submitbutton">
-	<p><%= submit_tag 'Log in &raquo;' %></p>
+	<p><%= submit_tag I18n.t(:'txt.button.login') %></p>
 </div>
 <% end -%>

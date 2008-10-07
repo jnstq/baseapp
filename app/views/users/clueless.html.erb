@@ -1,15 +1,15 @@
 <% content_for :header do -%>
-	Account Amnesia
+	<%= I18n.t(:'txt.account_amnesia') %>
 <% end -%>
 
 <p>
-	You have indicated you can't remember your <%= s(:site_name) %> account at all.
+	<%= I18n.t(:'txt.cant_remember_your_account_name', :site_name => s(:site_name)) %>
 </p>
 
 <p>
-	We can't help you directly to recover you account. Please contact <%= s(:support_name) %> at <%= secure_mail_to s(:support_email) %> for more help. 
+	<%= I18n.t(:'txt.cant_recover_you_account', :support_name => s(:support_name), :support_email => s(:support_email)) %>
 </p>
 
 <p>
-	If you don't have any important data in your account, you may also opt for <%= link_to "registering a new account", signup_url %>.
+	<%= I18n.t(:'txt.create_another_account', :signup_url => signup_url) %>
 </p>

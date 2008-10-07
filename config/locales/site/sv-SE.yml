@@ -1,5 +1,40 @@
 --- 
 sv-SE: 
   txt: 
+    account_amnesia: "Minnesf\xC3\xB6rlust"
+    sign_up: Bli medlem
+    button: 
+      login: Logga in &raquo;
+    having_trouble_logging_in: Har du problem med inloggningen?
+    account_created: Kontot skapat
+    cant_remember_your_account_name: "Du kan inte komma ih\xC3\xA5g ditt inloggningsnamn f\xC3\xB6r {{site_name}} \xC3\xB6verhuvudtaget."
+    administration: Administration
+    save_changes: "Spara \xC3\xA4ndringar"
+    log_out: Logga ut
+    profile: Profil
+    change_my_password: "Byt mitt l\xC3\xB6senord"
+    delete_my_account: Ta bort mitt konto
+    update_my_avatar: Uppdatera min avatar
     my_account: Mitt konto
+    column: Kolumn
+    log_in: Logga in
+    cant_recover_you_account: "Vi kan inte hj\xC3\xA4lpa dig direkt att \xC3\xA5terst\xC3\xA4lla ditt konto. Kontakta {{support_name}} p\xC3\xA5 {{support_email}} f\xC3\xB6r mer hj\xC3\xA4lp."
+    update_my_profile: Uppdatera min profil
+    baseapp: 
+      use_content_for_header: "Anv\xC3\xA4nd 'content_for :header do; end' i din vy f\xC3\xB6r att s\xC3\xA4tta titlen"
+    change_my_email_address: Byt min epostadress
+    confirm_delete_account: "\xC3\x84r du s\xC3\xA4ker du vill schema l\xC3\xA4gga ditt konto f\xC3\xB6r borttagning? All data l\xC3\xA4nkat till ditt konto p\xC3\xA5 {{site_name}} kommer att tas bort.\\n\\nDETTA G\xC3\x85R INTE ATT G\xC3\x96RA OGJORT!\\n\\nTack f\xC3\xB6r att du anv\xC3\xA4nde {{site_name}}. Vi hoppas p\xC3\xA5 att f\xC3\xA5 se dig snart igen."
+    sign_up_for_a_new_account: Skapa ett nytt konto
+    last_updated: Senast uppdaterat
+    editing_my_profile: Redigera min profil
+    create_another_account: "Om du inte har n\xC3\xA5got viktigt p\xC3\xA5 ditt konto, finns m\xC3\xB6jligheten att <a href='{{signup_url}}'>skapa ett nytt konto</a>"
+    profile_not_be_found: Det finns ingen profil
+    the_profile_you_requested_does_not_exist: "Profilen som efterfr\xC3\xA5gades finns inte."
+    user_name: "Anv\xC3\xA4ndarnamn"
+    link_to_someplace: "L\xC3\xA4nk n\xC3\xA5gonstans"
     account_details: Kontoinformation
+    password: "L\xC3\xB6senord"
+    remember_me: "Kom ih\xC3\xA5g mig"
+    email: Epost
+    data: Data
+    login_on_site: "{{site_name}} Inloggning"

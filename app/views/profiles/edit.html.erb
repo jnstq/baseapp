@@ -1,12 +1,12 @@
 <% if @profile.nil? -%>
 	<% content_for :header do -%>
-		Profile not be found
+		<%= I18n.t(:'txt.profile_not_be_found') %>
 	<% end -%>
 	
-	<p>The profile you requested does not exist.</p>
+	<p><%= I18n.t(:'txt.the_profile_you_requested_does_not_exist.') %></p>
 <% else -%>
 	<% content_for :header do -%>
-		Editing my profile
+		<%= I18n.t(:'txt.editing_my_profile') %>
 	<% end -%>
 
 	<%= render :partial => 'profiles/my_account' if current_user == @user %>
@@ -19,7 +19,7 @@
 		</p>
 	<% end -%>
 	
-	<%= submit_tag "Save changes" %>
+	<%= submit_tag I18n.t(:'txt.save_changes') %>
 	
 	<% end %>
 <% end -%>

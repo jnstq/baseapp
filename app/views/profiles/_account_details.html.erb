@@ -1,14 +1,14 @@
 <h3><%= I18n.t(:'txt.account_details') %></h3>
 <table class="overview">
-	<%= cell "Login", h(@user.login) %>
+	<%= cell I18n.t(:'txt.user_name'), h(@user.login) %>
 
 	<%= cell_separator %>
 	
-	<%= cell "Email", "#{h(@user.email)} <small>#{link_to "change", edit_email_user_url(@user)}</small>" %>
-	<%= cell "Password", "#{"*"*8} <small>#{link_to "change", edit_password_user_url(@user)}</small>" %>
+	<%= cell I18n.t(:'txt.email'), "#{h(@user.email)} <small>#{link_to "change", edit_email_user_url(@user)}</small>" %>
+	<%= cell I18n.t(:'txt.password'), "#{"*"*8} <small>#{link_to "change", edit_password_user_url(@user)}</small>" %>
 	
 	<%= cell_separator %>
 	
-	<%= cell "Account created", @user.created_at.to_s(:long) %>
-	<%= cell "Last updated", @user.updated_at.to_s(:long) %>
+	<%= cell I18n.t(:'txt.account_created'), @user.created_at.to_s(:long) %>
+	<%= cell I18n.t(:'txt.last_updated'), @user.updated_at.to_s(:long) %>
 </table>

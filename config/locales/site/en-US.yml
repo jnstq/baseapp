@@ -1,5 +1,40 @@
 --- 
 en-US: 
   txt: 
-    my_account: My account
+    account_amnesia: Account Amnesia
+    sign_up: Sign up
+    button: 
+      login: Log in &raquo;
+    having_trouble_logging_in: Having trouble logging in?
+    account_created: Account created
+    cant_remember_your_account_name: You have indicated you can't remember your {{site_name}} account at all.
+    administration: Administration
+    save_changes: Save changes
+    log_out: Log out
+    profile: Profile
+    change_my_password: Change my password
+    delete_my_account: Delete my account
+    update_my_avatar: Update my avatar
+    my_account: My Account
+    column: Column
+    log_in: Log in
+    cant_recover_you_account: We can't help you directly to recover you account. Please contact {{support_name}} at {{support_email}} for more help.
+    update_my_profile: Update my profile
+    baseapp: 
+      use_content_for_header: Use 'content_for :header do; end' in your view to set this title
+    change_my_email_address: Change my email address
+    confirm_delete_account: Are you sure you want to schedule your account for deletion? All data linked to your account on {{site_name}} will be removed from our systems.\n\nTHIS ACTION CANNOT BE UNDONE!\n\nThanks for using {{site_name}}. We hope to see you again soon!
+    sign_up_for_a_new_account: Sign up for a new account
+    last_updated: Last updated
+    editing_my_profile: Editing my profile
+    create_another_account: If you don't have any important data in your account, you may also opt for <a href='{{signup_url}}'>registering a new account</a>
+    profile_not_be_found: Profile not be found
+    the_profile_you_requested_does_not_exist: The profile you requested does not exist.
+    user_name: Login
+    link_to_someplace: Link to someplace
     account_details: Account details
+    password: Password
+    remember_me: Remember me
+    email: Email
+    data: Data
+    login_on_site: "{{site_name}} Login"

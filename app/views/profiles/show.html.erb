@@ -1,9 +1,9 @@
 <% if @profile.nil? -%>
 	<% content_for :header do -%>
-		Profile not be found
+		<%= I18n.t(:'txt.profile_not_be_found') %>
 	<% end -%>
 	
-	<p>The profile you requested does not exist.</p>
+	<p><%= I18n.t(:'txt.the_profile_you_requested_does_not_exist.') %></p>
 <% else -%>
 	<div style="float: right; margin: 10px">
 		<%= gravatar_for @user %>
